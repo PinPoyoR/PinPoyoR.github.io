@@ -1,9 +1,19 @@
+@font-face {
+    font-family: 'DoomFont';
+    src: url('fonts/DooM.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'AmazDoom';
+    src: url('fonts/AmazDooMLeft.ttf') format('truetype');
+}
+
 html{
     height: 100%;
-    margin: 0;
-    padding: 0;
 }
 body{
+    h1{
+        font-family: AmazDoom;
+    }
     height: 100%;
     margin: 0;
     padding: 0;
@@ -11,4 +21,22 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #202020;
+    color: white;
+    font-family: DoomFont;
+}
+#banner{
+    height: 50%;
+    width: 100%;
+    height: auto;
+}
+header{
+    div{
+        width: 100%;
+        display: flex;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
 }
