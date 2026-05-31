@@ -12,6 +12,7 @@
     --doomLight: #ff4c3b;
 }
 html{
+    cursor: crosshair;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -47,9 +48,10 @@ header{
     text-align: center;
 }
 #alerta{
+    text-align: center;
     background-color: var(--doom);
     color: #111111;
-    padding: 10px;
+    padding: 20px;
     border-radius: 20px;
     margin: 20px;
 }
@@ -59,7 +61,11 @@ header{
     transition: 0.1s;
 }
 .pinpo:hover{
-    cursor: default;
     font-size: 0.55em;
+    transition: 0.1s;
+}
+c:hover, d:hover{
+    color: var(--doomLight);
+    text-shadow: 2px 2px var(--doom), 4px 4px var(--doom);
     transition: 0.1s;
 }
