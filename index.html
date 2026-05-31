@@ -7,11 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1 id="alerta">⚠️ AUN EN DESARROLLO ⚠️<br><div class="pinpo">CREADO POR PINPOSHO</div></h1>
     <header>
         <img src="assets/banner.jpg" alt="Custom Doom Banner" id="banner">
         <h1 id="titulo"><c>Custom</c> <d>DooM</d></h1>
-        <p>Sitio web para crear armas y enemigos personalizados</p>
     </header>
-    <h1 id="alerta">⚠️ AUN EN DESARROLLO ⚠️<br><div class="pinpo">CREADO POR VALENTINO "PINPOSHO" GONZALEZ</div></h1>
+    <main>
+        <section id="general">
+            <h1>General info:</h1>
+            <input type="text" placeholder="Weapon name" id="name"></input>
+            <select id="type">
+                <option value="" disabled selected>Weapon type</option>
+                <option value="hitscan">Hitscan</option>
+                <option value="projectile">Projectile</option>
+            </select>
+        </section>
+        <section id="stats">
+            <h1>Weapon stats:</h1>
+            <input type="number" placeholder="Damage" id="dmg"></input>
+            <input type="number" placeholder="Fire Rate" id="fr"></input>
+            <input type="number" placeholder="Range" id="rng"></input>
+        </section>
+    </main>
 </body>
 </html>

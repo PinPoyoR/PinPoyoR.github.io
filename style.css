@@ -6,18 +6,22 @@
     font-family: 'AmazDoom';
     src: url('fonts/AmazDooMLeft.ttf') format('truetype');
 }
+
 :root {
     --doomShade: #cc271b;
     --doom: #f92e1f;
     --doomLight: #ff4c3b;
 }
+
 html{
+    box-sizing: border-box;
     cursor: crosshair;
     height: 100vh;
     margin: 0;
     padding: 0;
 }
 body{
+    box-sizing: border-box;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -29,12 +33,58 @@ body{
     color: white;
     font-family: DoomFont;
 }
+
+header{
+    align-items: center;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    justify-content: start;
+}
+
+c,d{
+    transition: 0.1s;
+}
+c:hover, d:hover{
+    color: var(--doomLight);
+    text-shadow: 2px 2px var(--doom), 4px 4px var(--doom);
+    transition: 0.1s;
+}
+
+input{
+    outline: none;
+    margin: 0 0 20px 0;
+    background-color: #111111;
+    color: white;
+    border: 2px solid var(--doom);
+    border-radius: 10px;
+    padding: 10px;
+    font-family: DoomFont;
+    font-size: 1.5em;
+    width: 300px;
+    height: 40px;
+    resize: none;
+    appearance: none; /* Elimina las flechas de los input type number en la mayoría de los navegadores */
+    -moz-appearance: textfield; /* Firefox y sus derivados*/
+}
+input:focus{
+    border-color: var(--doomLight);
+    box-shadow: 0 0 15px var(--doom);
+}
+/* Elimina las flechas de los input type number en Chrome, Safari y Opera */
+::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
 #titulo{
-    font-size: 10em;
+    font-size: 6em;
     font-family: AmazDoom;
     color: var(--doom);
     text-shadow: 2px 2px var(--doomShade), -2px -2px var(--doomLight);
 }
+
 #banner{
     top: 0;
     height: auto;
@@ -43,17 +93,18 @@ body{
     border-bottom: 2px solid var(--doom);
     border-top: 2px solid var(--doom);
 }
-header{
-    align-items: center;
-    text-align: center;
-}
+
+
+
+/*Esto de abajo se elimina al publicar la pagina web :eyes:*/
 #alerta{
     text-align: center;
     background-color: var(--doom);
     color: #111111;
-    padding: 20px;
     border-radius: 20px;
     margin: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .pinpo{
     font-size: 0.5em;
@@ -62,10 +113,5 @@ header{
 }
 .pinpo:hover{
     font-size: 0.55em;
-    transition: 0.1s;
-}
-c:hover, d:hover{
-    color: var(--doomLight);
-    text-shadow: 2px 2px var(--doom), 4px 4px var(--doom);
     transition: 0.1s;
 }
