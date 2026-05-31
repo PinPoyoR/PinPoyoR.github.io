@@ -17,12 +17,6 @@ html{
     padding: 0;
 }
 body{
-    h1{
-        font-size: 10em;
-        font-family: AmazDoom;
-        color: var(--doom);
-        text-shadow: 2px 2px var(--doomShade), -2px -2px var(--doomLight);
-    }
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -33,6 +27,12 @@ body{
     background-color: #111111;
     color: white;
     font-family: DoomFont;
+}
+#titulo{
+    font-size: 10em;
+    font-family: AmazDoom;
+    color: var(--doom);
+    text-shadow: 2px 2px var(--doomShade), -2px -2px var(--doomLight);
 }
 #banner{
     top: 0;
@@ -45,4 +45,21 @@ body{
 header{
     align-items: center;
     text-align: center;
+}
+#alerta{
+    background-color: var(--doom);
+    color: #111111;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.pinpo{
+    font-size: 0.5em;
+    margin-top: 10px;
+    transition: 0.1s;
+}
+.pinpo:hover{
+    cursor: default;
+    font-size: 0.55em;
+    transition: 0.1s;
 }
